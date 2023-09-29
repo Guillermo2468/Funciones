@@ -30,3 +30,6 @@ def generar_contraseña():
 def calcular_hipotenusa(lado1, lado2):
     hipotenusa = (lado1**2 + lado2**2)**0.5
     return hipotenusa
+
+def mediana(a,b,c):
+  return sorted([a,b,c])[1]
