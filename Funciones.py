@@ -1,7 +1,7 @@
 import random
 import string
 
-def es_primo(numero):
+def primo(numero):
     if numero <= 1:
         return False
     for i in range(2, int(numero**0.5) + 1):
@@ -12,7 +12,7 @@ def es_primo(numero):
 def siguiente_primo(n):
     primo_siguiente = n + 1
     while True:
-        if es_primo(primo_siguiente):
+        if primo(primo_siguiente):
             return primo_siguiente
         primo_siguiente += 1
 
